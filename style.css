@@ -1,6 +1,20 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li{
+  vertical-align: middle;
+}
+
 .header {
-  float: right;
   font-family: arial;
+  position: absolute;
+  right: 0;
 }
 
 .header ul li{
@@ -14,31 +28,15 @@
   color: #000;
 }
 
-a {
-  text-decoration: none;
-}
-
-li{
-  vertical-align: middle;
-}
-
 #grid{
-  background-image: url('https://ssl.gstatic.com/gb/images/i1_1967ca6a.png');
-  background-size: 528px 68px;
+  display: inline-block;
   height: 30px;
   width: 30px;
-  display: inline-block;
+  background-image: url('https://ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+  background-size: 528px 68px;
   background-position: -132px -38px;
   opacity: .55;
-  background-size: 528px 68px;
-  display: inline-block;
-  outline: none;
   vertical-align: middle;
-  line-height: normal;
-  white-space: nowrap;
-  box-sizing: border-box;
-  line-height: normal;
-  position: relative;
   text-align: left;
 }
 
@@ -53,9 +51,75 @@ li{
   border-radius: 2px;
   background-color: #4285f4;
   font-weight: bold;
-  outline: none;
   line-height: 28px;
   padding: 0 12px;
-  margin-top: -5px;
+  margin-right: 30px;
+}
+
+.footer{
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  font-family: arial;
+  font-size: small;
+  height: 35px;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  line-height: 40px;
+}
+
+.footer div {
+  display: inline;
+}
+
+#left-footer a {
+  display: inline-block;
+  margin-left: 30px;
+  line-height: 40px;
+}
+
+#right-footer a {
+  display: inline-block;
+  margin-right: 30px;
+  float: right;
+}
+
+.content {
+    position: absolute;
+    width: 500px;
+    left: 35%;
+    top: 35%;
+  }
+
+#button {
+  display: inline-block;
+  height: 36px;
+  line-height: 27px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  color: #757575;
+  font-family: arial,sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 30px 4px;
+  min-width: 54px;
+  padding: 0 16px;
   text-align: center;
+
+}
+
+#search {
+  background-image: url('images/mic-image.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 23px 23px;
+  width: 530px;
+  height: 32px;
+}
+
+#google-image{
+  margin-bottom: 25px;
 }
